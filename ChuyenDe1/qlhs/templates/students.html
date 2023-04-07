@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1 class="text-center text-body">HỒ SƠ HỌC SINH</h1>
+<form method="post" action="/action_page.php" class="was-validated">
+  <div class="form-group">
+    <label for="id">Mã học sinh:</label>
+    <input type="text" class="form-control" id="name" placeholder="" name="id" required>
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+  <div class="form-group">
+    <label for="name">Họ tên:</label>
+    <input type="text" class="form-control" id="name" placeholder="" name="name" required>
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+  <div class="form-group">
+    <label for="ngaysinh">Ngày sinh:</label>
+    <input type="text" class="form-control" id="ngaysinh" placeholder="" name="ngaysinh" required>
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+  <div class="form-group">
+    <label for="SDT">Số điện thoại</label>
+    <input type="text" class="form-control" id="SDT" placeholder="" name="SDT" required>
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+
+  <label for="sex">Giới tính</label>
+  <div class="form-check">
+
+    <input type="radio" class="form-check-input" id="Nam" name="optradio" value="Nam" checked>Nam
+    <label class="form-check-label" for="Nam"></label>
+  </div>
+  <div class="form-check">
+    <input type="radio" class="form-check-input" id="Nữ" name="optradio" value="Nữ">Nữ
+    <label class="form-check-label" for="Nữ"></label>
+<!--    <input type="text" class="form-control" id="sex" placeholder="" name="sex" required>-->
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+  <div class="form-group">
+    <label for="diachi">Địa chỉ</label>
+    <input type="text" class="form-control" id="diachi" placeholder="" name="diachi" required>
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="text" class="form-control" id="email" placeholder="" name="email" required>
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+  <button type="submit" class="btn btn-primary">Lưu</button>
+</form>
+{% endblock %}
